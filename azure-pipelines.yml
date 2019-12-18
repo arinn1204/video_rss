@@ -24,7 +24,7 @@ stages:
         targetType: filePath
         filePath: test.ps1
 - stage: Deploy
-  dependsOn: Build_And_Unit_Test
+  dependsOn: UnitTesting
   jobs:
   - job: DockerLinux
     pool:
