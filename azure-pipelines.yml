@@ -16,11 +16,13 @@ variables:
 
 stages:
 - stage: UnitTesting
-  steps: 
-  - task: PowerShell@2
-    inputs:
-      targetType: filePath
-      filePath: test.ps1
+  jobs:
+  - job: UnitTests 
+    steps:
+    - task: PowerShell@2
+      inputs:
+        targetType: filePath
+        filePath: test.ps1
 - stage: Deploy
   dependsOn: Build_And_Unit_Test
   jobs:
