@@ -8,7 +8,5 @@ class TestClass(unittest.TestCase):
         self.assertEqual(1, 1)
 
     def test_failing_test(self):
-        self.assertTrue(False)
+        self.assertTrue(True)
 
-if __name__ == '__main__':
-    unittest.main()

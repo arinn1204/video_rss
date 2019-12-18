@@ -1,9 +1,14 @@
 FROM python:3.8 AS base
 
+COPY main/requirements.txt /requirements.txt
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
+    && curl https://packages.microsoft.com/config/debian/10/prod.list > /etc/apt/sources.list.d/mssql-release.list \
+    && apt-get update \
+    && ACCEPT_EULA=Y apt-get install -y msodbcsql17 unixodbc-dev \
+    && pip install --user -r /requirements.txt \
+    && rm -rf /var/lib/apt/lists/ 
+
 WORKDIR /app
-COPY main/requirements.txt /app
-RUN apt-get update && apt-get install --no-install-recommends -y gcc build-essential unixodbc-dev && apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN pip install --user -r requirements.txt
 COPY main/*.py /app
 
-CMD ["python", "main.py"]
+CMD [ "python3", "main.py" ]
