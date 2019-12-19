@@ -18,7 +18,7 @@ stages:
           pip install wheel setuptools
           pip install -r main/requirements.txt
           pip install -r tests/requirements.txt
-          pytest tests --junitxml=test-results.xml --cov=main --html=test-report.html
+          python -m pytest tests --junitxml=test-results.xml --cov=main --html=test-report.html
         displayName: 'Run Tests'
 - stage: Deploy
   dependsOn: UnitTesting
