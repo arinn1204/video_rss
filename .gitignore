@@ -6,3 +6,5 @@ pyvenv.cfg
 .pytest*
 **/*report.html
 assets/*
+.coverage
+test-results.xml
