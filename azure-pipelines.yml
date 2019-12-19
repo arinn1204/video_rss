@@ -9,21 +9,17 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  buildConfiguration: 'Release'
-  testConfiguration: 'Release'
-  test_catalog: $(db_catalog)_test
-
 stages:
 - stage: UnitTesting
   jobs:
-  - job: Install requirements
+  - job: InstallRequirementsAndRunTests
     steps:
       - script: pip install -r main/requirements.txt
         displayName: 'Install Script Requirements'
       - script: pip install -r test/requirements.txt
         displayName: 'Install Testing Requirements'
       - script: pytest test --html=report.html 
+        displayName: 'Run Tests'
 - stage: Deploy
   dependsOn: UnitTesting
   jobs:
