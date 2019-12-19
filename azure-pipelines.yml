@@ -18,11 +18,22 @@ stages:
         inputs:
           versionSpec: '3.8'
       - script: |
+          python -V
           python -m pip install --upgrade pip setuptools wheel
           pip install -r main/requirements.txt
           pip install -r tests/requirements.txt
-          python -m pytest tests --junitxml=test-results.xml --cov=main --html=test-report.html
+          python -m pytest tests --junitxml=junit/test-results.xml --cov=main --cov-report=xml --cov-report=html
         displayName: 'Run Tests'
+      - task: PublishTestResults@2
+        condition: succeededOrFailed()
+        inputs:
+          testResultsFiles: 'test/**/test-*.xml'
+          testRunTitle: 'Publish test results for Python 3.8'
+      - task: PublishCodeCoverageResults@1
+        inputs:
+          codeCoverageTool: Cobertura 
+          summaryFileLocation: $(System.DefaultWorkingDirectory)/**/coverage.xml
+          reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 - stage: Deploy
   dependsOn: UnitTesting
   jobs:
