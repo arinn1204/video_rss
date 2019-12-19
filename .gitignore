@@ -8,3 +8,6 @@ pyvenv.cfg
 assets/*
 .coverage
 test-results.xml
+coverage.xml
+htmlcov
+junit
