@@ -18,7 +18,7 @@ stages:
         displayName: 'Install Script Requirements'
       - script: pip install -r test/requirements.txt
         displayName: 'Install Testing Requirements'
-      - script: pytest test --html=report.html 
+      - script: python -m pytest test --html=report.html 
         displayName: 'Run Tests'
 - stage: Deploy
   dependsOn: UnitTesting
