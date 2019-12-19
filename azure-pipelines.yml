@@ -27,7 +27,7 @@ stages:
       - task: PublishTestResults@2
         condition: succeededOrFailed()
         inputs:
-          testResultsFiles: 'test/**/test-*.xml'
+          testResultsFiles: '$(System.DefaultWorkingDirectory)/**/test-*.xml'
           testRunTitle: 'Publish test results for Python 3.8'
       - task: PublishCodeCoverageResults@1
         inputs:
