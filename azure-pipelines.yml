@@ -54,20 +54,3 @@ stages:
     - task: Docker@2
       inputs:
         command: logout
-  - job: DockerWindows
-    pool:
-      vmImage: 'windows-latest'
-    steps:
-    - task: Docker@2
-      inputs:
-        command: login
-        containerRegistry: $(dockerRegistry)
-    - task: Docker@2
-      inputs:
-        command: buildAndPush
-        repository: trixter1394/VideoRSS
-        tags: windows-latest
-        dockerfile: ./Dockerfile
-    - task: Docker@2
-      inputs:
-        command: logout
