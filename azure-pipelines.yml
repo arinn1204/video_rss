@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 variables:
   buildConfiguration: 'Release'
@@ -17,12 +17,13 @@ variables:
 stages:
 - stage: UnitTesting
   jobs:
-  - job: UnitTests 
+  - job: Install requirements
     steps:
-    - task: PowerShell@2
-      inputs:
-        targetType: filePath
-        filePath: test.ps1
+      - script: pip install -r main/requirements.txt
+        displayName: 'Install Script Requirements'
+      - script: pip install -r test/requirements.txt
+        displayName: 'Install Testing Requirements'
+      - script: pytest test --html=report.html 
 - stage: Deploy
   dependsOn: UnitTesting
   jobs:

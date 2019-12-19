@@ -3,3 +3,6 @@ Include/*
 Scripts/*
 pyvenv.cfg
 *.pyc
+.pytest*
+**/*report.html
+assets/*
