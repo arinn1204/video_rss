@@ -15,6 +15,7 @@ stages:
   - job: RunTests
     steps:
       - script: |
+          pip install wheel setuptools
           pip install -r main/requirements.txt
           pip install -r test/requirements.txt
           pytest tests --junitxml=test-results.xml --cov=main --html=test-report.html
