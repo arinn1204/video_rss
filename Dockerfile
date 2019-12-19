@@ -8,7 +8,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && pip install --user -r /requirements.txt \
     && rm -rf /var/lib/apt/lists/ 
 
+COPY main/*.py /app/
 WORKDIR /app
-COPY main/*.py /app
 
 CMD [ "python3", "main.py" ]
