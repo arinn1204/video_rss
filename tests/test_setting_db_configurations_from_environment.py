@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.8
 
-import sys,os
+import sys, os, re
 
 from os import environ as ENV
 
@@ -16,18 +16,15 @@ class TestSettingDbConfigurationsFromEnvironment:
         ENV['database_initial_catalog'] = 'notenoughmemesintests'
         ENV['database_integrated_security'] = 'NO'
         ENV['database_instance'] = 'int11kf3'
+        ENV['database_provider'] = 'mssql'
         self.config = configuration.Configuration()
 
     def teardown_method(self, method):
-        self.__delete_if_exist('database_username')
-        self.__delete_if_exist('database_password')
-        self.__delete_if_exist('database_data_source')
-        self.__delete_if_exist('database_initial_catalog')
-        self.__delete_if_exist('database_integrated_security')
-        self.__delete_if_exist('database_instance')
+        [ self.__delete_if_exist(key) for key in ENV.keys() if bool(re.match('^database', key, re.I)) ]
 
     def __delete_if_exist(self, key):
         ENV.pop(key, None)
+        return key
 
     def test_sets_username_based_on_environment_variable(self):
         assert self.config.database_username == 'SA'

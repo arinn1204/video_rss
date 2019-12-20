@@ -13,6 +13,9 @@ class TestSettingDefaultConfigurations:
         
     def test_set_no_db_username_by_default(self):
         assert hasattr(self.config, 'database_username') == False
+
+    def test_set_no_db_provider_by_default(self):
+        assert hasattr(self.config, 'database_provider') == False
     
     def test_set_no_db_password_by_default(self):
         assert hasattr(self.config, 'database_password') == False
