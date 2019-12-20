@@ -1,8 +1,7 @@
-#!/usr/bin/env python3.8
+#!env/bin/python
 
-import sys,os
-
-from os import environ as ENV
+import sys
+import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'main'))
 import configuration

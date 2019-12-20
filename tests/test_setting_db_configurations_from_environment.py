@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!env/bin/python
 
 import sys, os, re
 

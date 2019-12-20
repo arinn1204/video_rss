@@ -11,4 +11,5 @@ test-results.xml
 coverage.xml
 htmlcov
 junit
-.venv/*
+env/*
+.vscode
