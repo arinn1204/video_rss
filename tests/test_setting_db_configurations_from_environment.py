@@ -16,7 +16,8 @@ class TestSettingDbConfigurationsFromEnvironment:
         ENV['database_initial_catalog'] = 'notenoughmemesintests'
         ENV['database_integrated_security'] = 'NO'
         ENV['database_instance'] = 'int11kf3'
-        ENV['database_provider'] = 'mssql'
+        ENV['database_provider'] = 'postgres'
+        ENV['database_driver'] = 'ODBC Driver 14 for SQL Server'
         self.config = configuration.Configuration()
 
     def teardown_method(self, method):
@@ -45,6 +46,8 @@ class TestSettingDbConfigurationsFromEnvironment:
         assert self.config.database_instance == 'int11kf3'
 
     def test_sets_provider_based_on_environment_variable(self):
-        assert self.config.database_provider == 'mssql'
+        assert self.config.database_provider == 'postgres'
 
+    def test_sets_driver_based_on_environment_variable(self):
+        assert self.config.database_driver == 'ODBC Driver 14 for SQL Server'
     
