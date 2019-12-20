@@ -10,6 +10,7 @@ class Configuration:
         self.__default_assignment('database_username', None)
         self.__default_assignment('database_password', None)
         self.__default_assignment('database_instance', None)
+        self.__default_assignment('database_provider', None)
 
 
     def __default_assignment(self, property_name, default_value):

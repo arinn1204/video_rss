@@ -44,4 +44,7 @@ class TestSettingDbConfigurationsFromEnvironment:
     def test_sets_instance_based_on_environment_variable(self):
         assert self.config.database_instance == 'int11kf3'
 
+    def test_sets_provider_based_on_environment_variable(self):
+        assert self.config.database_provider == 'mssql'
+
     
