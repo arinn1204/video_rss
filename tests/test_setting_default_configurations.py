@@ -1,8 +1,5 @@
 #!env/bin/python
 
-import sys
-import os
-
 from ..video_rss import configuration
 
 class TestSettingDefaultConfigurations:

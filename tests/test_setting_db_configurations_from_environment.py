@@ -1,6 +1,6 @@
 #!env/bin/python
 
-import sys, os, re
+import re
 
 from os import environ as ENV
 

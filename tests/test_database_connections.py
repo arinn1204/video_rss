@@ -1,8 +1,8 @@
 #!env/bin/python
 
-import os, sys, uuid, re
-import pyodbc
-
+import os
+import uuid
+import re
 
 from ..video_rss import configuration, database
 
