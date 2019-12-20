@@ -13,7 +13,6 @@ class Configuration:
         self.__default_assignment('database_password', None)
         self.__default_assignment('database_instance', None)
 
-
     def __default_assignment(self, property_name, default_value):
         if property_name in environ:
             self.__dict__[property_name] = environ[property_name]
