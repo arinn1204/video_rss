@@ -20,7 +20,7 @@ stages:
       - script: |
           python -V
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r main/requirements.txt
+          pip install -r video_rss/requirements.txt
           pip install -r tests/requirements.txt
           python -m pytest tests --junitxml=junit/test-results.xml --cov=main --cov-report=xml --cov-report=html
         displayName: 'Run Tests'

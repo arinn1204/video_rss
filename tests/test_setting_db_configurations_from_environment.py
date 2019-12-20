@@ -4,8 +4,7 @@ import sys, os, re
 
 from os import environ as ENV
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'main'))
-import configuration
+from ..video_rss import configuration
 
 
 class TestSettingDbConfigurationsFromEnvironment:

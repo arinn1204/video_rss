@@ -1,6 +1,6 @@
 FROM python:3.8 AS base
 
-COPY main/requirements.txt /requirements.txt
+COPY video_rss/requirements.txt /requirements.txt
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && curl https://packages.microsoft.com/config/debian/10/prod.list > /etc/apt/sources.list.d/mssql-release.list \
     && apt-get update \
@@ -8,7 +8,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && pip install --user -r /requirements.txt \
     && rm -rf /var/lib/apt/lists/ 
 
-COPY main/*.py /app/
+COPY video_rss/*.py /app/
 WORKDIR /app
 
 CMD [ "python3", "main.py" ]

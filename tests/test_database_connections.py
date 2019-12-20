@@ -3,9 +3,8 @@
 import os, sys, uuid, re
 import pyodbc
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'main'))
-import configuration
-import database
+
+from ..video_rss import configuration, database
 
 class TestDatabaseConnection:
     

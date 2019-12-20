@@ -3,8 +3,7 @@
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'main'))
-import configuration
+from ..video_rss import configuration
 
 class TestSettingDefaultConfigurations:
     def setup_method(self, method):
