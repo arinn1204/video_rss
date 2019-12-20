@@ -7,9 +7,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'main'))
 import configuration
 import database
 
-
-
-class TestBasicDatabaseConnection:
+class TestDatabaseConnection:
     
     def setup_method(self, method):
         self.config = configuration.Configuration()
