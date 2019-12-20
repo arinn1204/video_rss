@@ -4,7 +4,8 @@ import os
 import uuid
 import re
 
-from ..video_rss import configuration, database
+from ..video_rss import configuration
+from ..video_rss.database import database
 
 class TestDatabaseConnection:
     
