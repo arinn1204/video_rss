@@ -22,7 +22,7 @@ stages:
           pip install -r video_rss/requirements.txt
           pip install -r tests/requirements.txt
         displayName: Setup Requirements
-      - script: flake8
+      - script: flake8 -v
         displayName: 'Run Linting'
       - script: python -m pytest tests --junitxml=junit/test-results.xml --cov=main --cov-report=xml --cov-report=html
         displayName: 'Run Tests'
