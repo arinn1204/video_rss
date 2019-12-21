@@ -20,7 +20,9 @@ class TestSettingDbConfigurationsFromEnvironment:
         self.config = configuration.Configuration()
 
     def teardown_method(self, method):
-        [ self.__delete_if_exist(key) for key in ENV.keys() if bool(re.match('^database', key, re.I)) ]
+        for key in ENV.keys():
+            if bool(re.match('^database', key, re.I)):
+                self.__delete_if_exist(key)
 
     def __delete_if_exist(self, key):
         ENV.pop(key, None)
@@ -33,7 +35,8 @@ class TestSettingDbConfigurationsFromEnvironment:
         assert self.config.database_password == 'hunter2'
 
     def test_sets_data_source_based_on_environment_variable(self):
-        assert self.config.database_data_source == 'alliseeisstars.database.windows.net'
+        expected_data_source = 'alliseeisstars.database.windows.net'
+        assert self.config.database_data_source == expected_data_source
 
     def test_sets_catalog_based_on_environment_variable(self):
         assert self.config.database_initial_catalog == 'notenoughmemesintests'

@@ -4,6 +4,7 @@ import pyodbc
 
 from .connection_string_helper import build_connection_string
 
+
 class Database:
     def __init__(self, config):
         self.config = config
