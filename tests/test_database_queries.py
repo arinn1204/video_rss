@@ -90,6 +90,7 @@ class TestDatabaseQueries:
             called_time,
             'magnet?:somelinkhere.')
         connection.commit.assert_called_once_with()
+        connection.rollback.assert_not_called()
 
     def test_should_rollback_on_failure(self, mocker):
         called_id = str(uuid.uuid4())
