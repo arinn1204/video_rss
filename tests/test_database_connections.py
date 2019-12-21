@@ -8,7 +8,7 @@ from ..video_rss import configuration
 from ..video_rss.database import database
 
 class TestDatabaseConnection:
-    
+
     def setup_method(self, method):
         self.config = configuration.Configuration()
         self.database = database.Database(self.config)
@@ -27,7 +27,7 @@ class TestDatabaseConnection:
         db.get_by_id(str(uuid.uuid4()))
         connect_mocker.assert_called_once_with('Driver={ODBC Driver 17 for SQL Server};Data Source=localhost;Initial Catalog=noblepanther_test;Integrated Security=SSPI;')
 
-        
+
     def test_constructing_proper_connection_string_for_sql_server_without_sspi(self, mocker):
         connect_mocker = mocker.Mock()
         mocker.patch('pyodbc.connect', new = connect_mocker)
