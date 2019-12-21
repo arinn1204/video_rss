@@ -1,4 +1,4 @@
-#!env/bin/python
+#!.env/bin/python
 
 from ..video_rss import configuration
 

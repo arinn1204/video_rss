@@ -1,3 +1,3 @@
-#!env/bin/python
+#!.env/bin/python
 
 print('Hello, World!')

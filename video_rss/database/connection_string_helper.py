@@ -1,4 +1,4 @@
-#!env/bin/python
+#!.env/bin/python
 
 
 def build_connection_string(config):
