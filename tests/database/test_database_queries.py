@@ -5,8 +5,9 @@ import re
 import uuid
 import pyodbc
 from datetime import datetime
-from ..video_rss.database import database
-from ..video_rss import configuration
+
+from ...video_rss.database import database
+from ...video_rss import configuration
 
 
 class TestDatabaseQueries:

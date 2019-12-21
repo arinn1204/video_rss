@@ -4,7 +4,7 @@ import re
 
 from os import environ as ENV
 
-from ..video_rss import configuration
+from ...video_rss import configuration
 
 
 class TestSettingDbConfigurationsFromEnvironment:

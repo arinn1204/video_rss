@@ -1,6 +1,6 @@
 #!.env/bin/python
 
-from ..video_rss import configuration
+from ...video_rss import configuration
 
 
 class TestSettingDefaultConfigurations:
