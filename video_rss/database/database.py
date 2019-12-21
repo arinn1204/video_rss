@@ -25,10 +25,10 @@ class Database:
         query = """
         INSERT INTO rss.video_rss(torrent_id,torrent_name,time_added,magnet)
         VALUES(?, ?, ?, ?)"""
+        entries_effected = 0
 
         connection = self.__get_connection()
         cursor = connection.cursor()
-        entries_effected = 0
 
         try:
             rows = cursor.execute(
