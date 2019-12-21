@@ -1,7 +1,6 @@
 #!.env/bin/python
 
 import pyodbc
-
 from .connection_string_helper import build_connection_string
 
 
