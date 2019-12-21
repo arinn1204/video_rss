@@ -32,6 +32,7 @@ stages:
           testResultsFiles: '$(System.DefaultWorkingDirectory)/**/test-*.xml'
           testRunTitle: 'Publish test results for Python 3.8'
       - task: PublishCodeCoverageResults@1
+        condition: succeededOrFailed()
         inputs:
           codeCoverageTool: Cobertura
           summaryFileLocation: $(System.DefaultWorkingDirectory)/**/coverage.xml
