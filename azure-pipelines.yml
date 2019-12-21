@@ -18,11 +18,13 @@ stages:
         inputs:
           versionSpec: '3.8'
       - script: |
-          python -V
           python -m pip install --upgrade pip setuptools wheel
           pip install -r video_rss/requirements.txt
           pip install -r tests/requirements.txt
-          python -m pytest tests --junitxml=junit/test-results.xml --cov=main --cov-report=xml --cov-report=html
+        displayName: Setup Requirements
+      - script: flake8
+        displayName: 'Run Linting'
+      - script: python -m pytest tests --junitxml=junit/test-results.xml --cov=main --cov-report=xml --cov-report=html
         displayName: 'Run Tests'
       - task: PublishTestResults@2
         condition: succeededOrFailed()
@@ -31,7 +33,7 @@ stages:
           testRunTitle: 'Publish test results for Python 3.8'
       - task: PublishCodeCoverageResults@1
         inputs:
-          codeCoverageTool: Cobertura 
+          codeCoverageTool: Cobertura
           summaryFileLocation: $(System.DefaultWorkingDirectory)/**/coverage.xml
           reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 - stage: Deploy
