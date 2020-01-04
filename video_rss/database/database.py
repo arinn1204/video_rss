@@ -19,6 +19,7 @@ class Database:
         rows = cursor.execute(query, torrent_id)
         data = rows.fetchall()
 
+        cursor.close()
         connection.close()
 
         return data
@@ -45,6 +46,7 @@ class Database:
         else:
             connection.commit()
         finally:
+            cursor.close()
             connection.close()
 
         return entries_effected
