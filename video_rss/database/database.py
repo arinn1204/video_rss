@@ -17,8 +17,11 @@ class Database:
         connection = self.__get_connection()
         cursor = connection.cursor()
         rows = cursor.execute(query, torrent_id)
+        data = rows.fetchall()
 
-        return rows.fetchall()
+        connection.close()
+
+        return data
 
     def insert(self, torrent_id, torrent_file, added_time, magnet_link):
         query = """
@@ -41,6 +44,8 @@ class Database:
             connection.rollback()
         else:
             connection.commit()
+        finally:
+            connection.close()
 
         return entries_effected
 
