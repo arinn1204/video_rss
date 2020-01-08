@@ -34,7 +34,7 @@ class TestLogger:
         json_mock = mocker.patch('json.dumps')
         logger = Logger(self.config)
 
-        logger.log_trace(log_object)
+        logger.log(log_object)
 
         json_mock.assert_called_once_with(expected_result)
 
@@ -60,7 +60,7 @@ class TestLogger:
         json_mock = mocker.patch('json.dumps')
         logger = Logger(self.config)
 
-        logger.log_trace(log_object)
+        logger.log(log_object)
 
         json_mock.assert_called_once_with(expected_result)
 
@@ -86,18 +86,18 @@ class TestLogger:
         json_mock = mocker.patch('json.dumps')
         logger = Logger(self.config)
 
-        logger.log_trace(log_object)
+        logger.log(log_object)
 
         json_mock.assert_called_once_with(expected_result)
 
     def test_should_not_log_if_below_threshold(self, mocker):
-        self.config.logging_severity = 'OFF'
+        self.config.logging_severity = 'WARNING'
 
         log_object = "some log message oh no!"
 
         json_mock = mocker.patch('json.dumps')
         logger = Logger(self.config)
 
-        logger.log_trace(log_object)
+        logger.log(log_object, 'TRACE')
 
         json_mock.assert_not_called()

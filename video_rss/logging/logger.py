@@ -5,7 +5,7 @@ import json
 
 class Logger:
     def __init__(self, config):
-        levels = {
+        self.levels = {
             'OFF': -1,
             'FATAL': 1,
             'CRITICAL': 2,
@@ -15,12 +15,12 @@ class Logger:
             'TRACE': 6,
             'ALL': 99
         }
-        self.log_level = levels[config.logging_severity]
+        self.log_level = self.levels[config.logging_severity]
         self.build_log = lambda message: self.__build_log(message, config)
         self.masked_values = config.logging_masked_values
 
-    def log_trace(self, log):
-        if self.log_level >= 6:
+    def log(self, log, severity='TRACE'):
+        if self.log_level >= self.levels[severity.upper()]:
             self.__log(log)
 
     def __log(self, message):
