@@ -30,6 +30,7 @@ class Configuration:
             'database_instance',
             None)
         self.__default_assignment('logging_severity', 'DEBUG', True)
+        self.logging_masked_values = ['password', 'key']
 
     def __default_assignment(
             self,
