@@ -4,100 +4,103 @@ from ...video_rss import configuration
 from ...video_rss.logging.logger import Logger
 
 
-class TestLogger:
+def test_should_pass_log_object_to_json_converter(mocker):
+    config = configuration.Configuration()
+    config.__dict__.clear()
+    config.logging_severity = 'TRACE'
+    config.logging_masked_values = ['password', 'key']
 
-    def setup_method(self, method):
-        self.config = configuration.Configuration()
-        self.config.logging_severity = 'TRACE'
+    log_object = {
+        'username': 'hunter2',
+        'password': '***'
+    }
 
-    def test_should_pass_log_object_to_json_converter(self, mocker):
-        self.config.__dict__.clear()
-        self.config.logging_severity = 'TRACE'
-        self.config.logging_masked_values = ['password', 'key']
-
-        log_object = {
+    expected_result = {
+        'message': {
             'username': 'hunter2',
             'password': '***'
+        },
+        'logging': {
+            'severity': 'TRACE',
+            'masked_values': ['password', 'key']
         }
+    }
 
-        expected_result = {
-            'message': {
-                'username': 'hunter2',
-                'password': '***'
-            },
-            'logging': {
-                'severity': 'TRACE',
-                'masked_values': ['password', 'key']
-            }
+    json_mock = mocker.patch('json.dumps')
+    logger = Logger(config)
+
+    logger.log(log_object)
+
+    json_mock.assert_called_once_with(expected_result)
+
+
+def test_should_mask_database_password(mocker):
+    config = configuration.Configuration()
+    config.__dict__.clear()
+    config.logging_severity = 'TRACE'
+    config.database_password = 'hunter2'
+    config.logging_masked_values = ['password']
+
+    log_object = "some log message oh no!"
+
+    expected_result = {
+        'message': "some log message oh no!",
+        'logging': {
+            'severity': 'TRACE',
+            'masked_values': ['password']
+        },
+        'database': {
+            'password': '********'
         }
+    }
 
-        json_mock = mocker.patch('json.dumps')
-        logger = Logger(self.config)
+    json_mock = mocker.patch('json.dumps')
+    logger = Logger(config)
 
-        logger.log(log_object)
+    logger.log(log_object)
 
-        json_mock.assert_called_once_with(expected_result)
+    json_mock.assert_called_once_with(expected_result)
 
-    def test_should_mask_database_password(self, mocker):
-        self.config.__dict__.clear()
-        self.config.logging_severity = 'TRACE'
-        self.config.database_password = 'hunter2'
-        self.config.logging_masked_values = ['password']
 
-        log_object = "some log message oh no!"
+def test_should_mask_api_key(mocker):
+    config = configuration.Configuration()
+    config.__dict__.clear()
+    config.logging_severity = 'TRACE'
+    config.someapi_key = 'hunter2'
+    config.logging_masked_values = ['key']
 
-        expected_result = {
-            'message': "some log message oh no!",
-            'logging': {
-                'severity': 'TRACE',
-                'masked_values': ['password']
-            },
-            'database': {
-                'password': '********'
-            }
+    log_object = "some log message oh no!"
+
+    expected_result = {
+        'message': "some log message oh no!",
+        'logging': {
+            'severity': 'TRACE',
+            'masked_values': ['key']
+        },
+        'someapi': {
+            'key': '********'
         }
+    }
 
-        json_mock = mocker.patch('json.dumps')
-        logger = Logger(self.config)
+    json_mock = mocker.patch('json.dumps')
+    logger = Logger(config)
 
-        logger.log(log_object)
+    logger.log(log_object)
 
-        json_mock.assert_called_once_with(expected_result)
+    json_mock.assert_called_once_with(expected_result)
 
-    def test_should_mask_api_key(self, mocker):
-        self.config.__dict__.clear()
-        self.config.logging_severity = 'TRACE'
-        self.config.someapi_key = 'hunter2'
-        self.config.logging_masked_values = ['key']
 
-        log_object = "some log message oh no!"
+def test_should_not_log_if_below_threshold(mocker):
+    config = configuration.Configuration()
+    config.__dict__.clear()
+    config.logging_severity = 'WARNING'
+    config.logging_masked_values = ['key', 'password']
 
-        expected_result = {
-            'message': "some log message oh no!",
-            'logging': {
-                'severity': 'TRACE',
-                'masked_values': ['key']
-            },
-            'someapi': {
-                'key': '********'
-            }
-        }
+    log_object = "some log message oh no!"
 
-        json_mock = mocker.patch('json.dumps')
-        logger = Logger(self.config)
+    json_mock = mocker.patch('json.dumps')
+    logger = Logger(config)
 
-        logger.log(log_object)
+    logger.log(log_object, 'TRACE')
 
-        json_mock.assert_called_once_with(expected_result)
-
-    def test_should_not_log_if_below_threshold(self, mocker):
-        self.config.logging_severity = 'WARNING'
-
-        log_object = "some log message oh no!"
-
-        json_mock = mocker.patch('json.dumps')
-        logger = Logger(self.config)
-
-        logger.log(log_object, 'TRACE')
-
-        json_mock.assert_not_called()
+    json_mock.assert_not_called()

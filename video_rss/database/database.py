@@ -5,8 +5,9 @@ from .connection_string_helper import build_connection_string
 
 
 class Database:
-    def __init__(self, config):
+    def __init__(self, config, logger):
         self.config = config
+        self.logger = logger
 
     def get_by_id(self, torrent_id):
         query = """
