@@ -1,19 +1,11 @@
 #!.env/bin/python
 
-import os
-import re
 import uuid
 import pyodbc
 from datetime import datetime
 
 from ...video_rss.database import database
 from ...video_rss import configuration
-
-
-def teardown_method(method):
-    for key in os.environ.keys():
-        if bool(re.match('^database', key, re.I)):
-            os.environ.pop(key, None)
 
 
 def test_queries_based_on_torrent_id_entered(mocker):
