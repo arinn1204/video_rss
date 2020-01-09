@@ -26,7 +26,6 @@ class Logger:
                 new_log[section] = {}
 
             log_category = new_log[section]
-
             log_category[config_name] = self.__mask(config_name, value)
 
         return new_log
