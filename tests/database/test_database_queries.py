@@ -19,7 +19,7 @@ def test_queries_based_on_torrent_id_entered(mocker):
     db.get_by_id(called_id)
 
     mock_cursor.execute.assert_called_once_with("""
-        SELECT 1
+        SELECT torrent_id, torrent_name, time_added
         FROM rss.video_rss
         WHERE torrent_id = ?;""", called_id)
 

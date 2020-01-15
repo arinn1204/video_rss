@@ -11,9 +11,11 @@ class Database:
 
     def get_by_id(self, torrent_id):
         query = """
-        SELECT 1
+        SELECT torrent_id, torrent_name, time_added
         FROM rss.video_rss
         WHERE torrent_id = ?;"""
+
+        self.logger.log(query, 'DEBUG')
 
         connection = self.__get_connection()
         cursor = connection.cursor()
@@ -23,6 +25,8 @@ class Database:
         cursor.close()
         connection.close()
 
+        self.logger.log(data, 'DEBUG')
+
         return data
 
     def insert(self, torrent_id, torrent_file, added_time, magnet_link):
@@ -30,6 +34,8 @@ class Database:
         INSERT INTO rss.video_rss(torrent_id,torrent_name,time_added,magnet)
         VALUES(?, ?, ?, ?)"""
         entries_effected = 0
+
+        self.logger.log(query, 'DEBUG')
 
         connection = self.__get_connection()
         cursor = connection.cursor()
@@ -42,14 +48,16 @@ class Database:
                 added_time,
                 magnet_link)
             entries_effected = rows.rowcount()
-        except pyodbc.DatabaseError:
+        except pyodbc.DatabaseError as e:
             connection.rollback()
+            self.logger.log(e, 'ERROR')
         else:
             connection.commit()
         finally:
             cursor.close()
             connection.close()
 
+        self.logger.log(f"Rows effected: {entries_effected}", 'DEBUG')
         return entries_effected
 
     def __get_connection(self):
