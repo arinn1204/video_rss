@@ -1,0 +1,800 @@
+{
+    "feed": {
+        "title": "showRSS personal feed",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+            "value": "showRSS personal feed"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://showrss.info"
+            }
+        ],
+        "link": "http://showrss.info",
+        "ttl": "30",
+        "subtitle": "showRSS personal feed",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+            "value": "showRSS personal feed"
+        }
+    },
+    "entries": [
+        {
+            "title": "Vikings S06E07 720p WEB H264 GHOSTS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Vikings S06E07 720p WEB H264 GHOSTS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:743E0F4656DFD378420C6C8B9127121B1D656E3A&dn=Vikings+S06E07+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:743E0F4656DFD378420C6C8B9127121B1D656E3A&dn=Vikings+S06E07+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:743E0F4656DFD378420C6C8B9127121B1D656E3A&dn=Vikings+S06E07+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "cc4a6cca13da8d2483e88c2e640027857aef64a7",
+            "guidislink": false,
+            "published": "Thu, 16 Jan 2020 02:00:50 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                16,
+                2,
+                0,
+                50,
+                3,
+                16,
+                0
+            ],
+            "summary": "New episode: Vikings S06E07 720p WEB H264 GHOSTS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Vikings S06E07 720p WEB H264 GHOSTS"
+            },
+            "tv_show_id": "272",
+            "tv_external_id": "29",
+            "tv_show_name": "Vikings",
+            "tv_episode_id": "115095",
+            "tv_raw_title": "Vikings S06E07 720p WEB H264 GHOSTS",
+            "tv_info_hash": "743E0F4656DFD378420C6C8B9127121B1D656E3A"
+        },
+        {
+            "title": "DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:9CD90E920932126815F826A007670365F48F7DCC&dn=DCs+Legends+of+Tomorrow+S05E01+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:9CD90E920932126815F826A007670365F48F7DCC&dn=DCs+Legends+of+Tomorrow+S05E01+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:9CD90E920932126815F826A007670365F48F7DCC&dn=DCs+Legends+of+Tomorrow+S05E01+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "68312bf69c0c91e6fcfd82ea0c2988a51f18a140",
+            "guidislink": false,
+            "published": "Wed, 15 Jan 2020 03:10:27 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                15,
+                3,
+                10,
+                27,
+                2,
+                15,
+                0
+            ],
+            "summary": "New episode: DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA"
+            },
+            "tv_show_id": "448",
+            "tv_external_id": "1851",
+            "tv_show_name": "DC's Legends of Tomorrow",
+            "tv_episode_id": "115012",
+            "tv_raw_title": "DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA",
+            "tv_info_hash": "9CD90E920932126815F826A007670365F48F7DCC"
+        },
+        {
+            "title": "Arrow S08E08 720p HDTV x264 SVA",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Arrow S08E08 720p HDTV x264 SVA"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:3AE14AC3193B8F9E1AF17FFCA41372798936680A&dn=Arrow+S08E08+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:3AE14AC3193B8F9E1AF17FFCA41372798936680A&dn=Arrow+S08E08+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:3AE14AC3193B8F9E1AF17FFCA41372798936680A&dn=Arrow+S08E08+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "fcf768f1847e6a0b390e4a6261cbcc286149131f",
+            "guidislink": false,
+            "published": "Wed, 15 Jan 2020 02:00:48 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                15,
+                2,
+                0,
+                48,
+                2,
+                15,
+                0
+            ],
+            "summary": "New episode: Arrow S08E08 720p HDTV x264 SVA",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Arrow S08E08 720p HDTV x264 SVA"
+            },
+            "tv_show_id": "117",
+            "tv_external_id": "4",
+            "tv_show_name": "Arrow",
+            "tv_episode_id": "114997",
+            "tv_raw_title": "Arrow S08E08 720p HDTV x264 SVA",
+            "tv_info_hash": "3AE14AC3193B8F9E1AF17FFCA41372798936680A"
+        },
+        {
+            "title": "Ray Donovan S07E09 720p WEB H264 XLF",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Ray Donovan S07E09 720p WEB H264 XLF"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:C675B18EA3AAFA9BAFB3F36A9E9BF8B07D28D117&dn=Ray+Donovan+S07E09+720p+WEB+H264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:C675B18EA3AAFA9BAFB3F36A9E9BF8B07D28D117&dn=Ray+Donovan+S07E09+720p+WEB+H264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:C675B18EA3AAFA9BAFB3F36A9E9BF8B07D28D117&dn=Ray+Donovan+S07E09+720p+WEB+H264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "5c7d1800eacc6e5392c9e6200cabf554d59f5d7a",
+            "guidislink": false,
+            "published": "Sun, 12 Jan 2020 05:10:25 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                12,
+                5,
+                10,
+                25,
+                6,
+                12,
+                0
+            ],
+            "summary": "New episode: Ray Donovan S07E09 720p WEB H264 XLF",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Ray Donovan S07E09 720p WEB H264 XLF"
+            },
+            "tv_show_id": "102",
+            "tv_external_id": "152",
+            "tv_show_name": "Ray Donovan",
+            "tv_episode_id": "114824",
+            "tv_raw_title": "Ray Donovan S07E09 720p WEB H264 XLF",
+            "tv_info_hash": "C675B18EA3AAFA9BAFB3F36A9E9BF8B07D28D117"
+        },
+        {
+            "title": "Vikings S06E06 720p WEB H264 GHOSTS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Vikings S06E06 720p WEB H264 GHOSTS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:05E226012F9F9D26D41E630D4D37E7D9215594DE&dn=Vikings+S06E06+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:05E226012F9F9D26D41E630D4D37E7D9215594DE&dn=Vikings+S06E06+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:05E226012F9F9D26D41E630D4D37E7D9215594DE&dn=Vikings+S06E06+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "74ea2cce3c7666acaaf24de91a0c77daafc9ca3b",
+            "guidislink": false,
+            "published": "Thu, 09 Jan 2020 01:40:24 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                9,
+                1,
+                40,
+                24,
+                3,
+                9,
+                0
+            ],
+            "summary": "New episode: Vikings S06E06 720p WEB H264 GHOSTS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Vikings S06E06 720p WEB H264 GHOSTS"
+            },
+            "tv_show_id": "272",
+            "tv_external_id": "29",
+            "tv_show_name": "Vikings",
+            "tv_episode_id": "114566",
+            "tv_raw_title": "Vikings S06E06 720p WEB H264 GHOSTS",
+            "tv_info_hash": "05E226012F9F9D26D41E630D4D37E7D9215594DE"
+        },
+        {
+            "title": "Family Guy S18E10 720p WEB x264 TBS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Family Guy S18E10 720p WEB x264 TBS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:5E6B8A1E6D7ADB2E514B4E768495DC160C1A02FF&dn=Family+Guy+S18E10+720p+WEB+x264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:5E6B8A1E6D7ADB2E514B4E768495DC160C1A02FF&dn=Family+Guy+S18E10+720p+WEB+x264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:5E6B8A1E6D7ADB2E514B4E768495DC160C1A02FF&dn=Family+Guy+S18E10+720p+WEB+x264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "a7b9549ba0b07520dd7d5558e76dc81ce942ce4c",
+            "guidislink": false,
+            "published": "Mon, 06 Jan 2020 01:40:22 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                6,
+                1,
+                40,
+                22,
+                0,
+                6,
+                0
+            ],
+            "summary": "New episode: Family Guy S18E10 720p WEB x264 TBS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Family Guy S18E10 720p WEB x264 TBS"
+            },
+            "tv_show_id": "57",
+            "tv_external_id": "84",
+            "tv_show_name": "Family Guy",
+            "tv_episode_id": "114289",
+            "tv_raw_title": "Family Guy S18E10 720p WEB x264 TBS",
+            "tv_info_hash": "5E6B8A1E6D7ADB2E514B4E768495DC160C1A02FF"
+        },
+        {
+            "title": "Ray Donovan S07E08 720p WEB H264 XLF",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Ray Donovan S07E08 720p WEB H264 XLF"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:316FFEB8DDAE5F74349E428CB4098111EDC0D0A9&dn=Ray+Donovan+S07E08+720p+WEB+H264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:316FFEB8DDAE5F74349E428CB4098111EDC0D0A9&dn=Ray+Donovan+S07E08+720p+WEB+H264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:316FFEB8DDAE5F74349E428CB4098111EDC0D0A9&dn=Ray+Donovan+S07E08+720p+WEB+H264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "556a2ba8d30a063440c1a599df8eb815cf9c1ec3",
+            "guidislink": false,
+            "published": "Sun, 05 Jan 2020 05:10:22 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                5,
+                5,
+                10,
+                22,
+                6,
+                5,
+                0
+            ],
+            "summary": "New episode: Ray Donovan S07E08 720p WEB H264 XLF",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Ray Donovan S07E08 720p WEB H264 XLF"
+            },
+            "tv_show_id": "102",
+            "tv_external_id": "152",
+            "tv_show_name": "Ray Donovan",
+            "tv_episode_id": "114263",
+            "tv_raw_title": "Ray Donovan S07E08 720p WEB H264 XLF",
+            "tv_info_hash": "316FFEB8DDAE5F74349E428CB4098111EDC0D0A9"
+        },
+        {
+            "title": "Vikings S06E05 720p HDTV x264 AVS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Vikings S06E05 720p HDTV x264 AVS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:47AF858FB510C3842A879AD75875F3E44844B04E&dn=Vikings+S06E05+720p+HDTV+x264+AVS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:47AF858FB510C3842A879AD75875F3E44844B04E&dn=Vikings+S06E05+720p+HDTV+x264+AVS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:47AF858FB510C3842A879AD75875F3E44844B04E&dn=Vikings+S06E05+720p+HDTV+x264+AVS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "bd06577ad5b6eefd4d7c8b0153b6e27906c9d69f",
+            "guidislink": false,
+            "published": "Thu, 02 Jan 2020 04:10:20 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                2,
+                4,
+                10,
+                20,
+                3,
+                2,
+                0
+            ],
+            "summary": "New episode: Vikings S06E05 720p HDTV x264 AVS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Vikings S06E05 720p HDTV x264 AVS"
+            },
+            "tv_show_id": "272",
+            "tv_external_id": "29",
+            "tv_show_name": "Vikings",
+            "tv_episode_id": "114155",
+            "tv_raw_title": "Vikings S06E05 720p HDTV x264 AVS",
+            "tv_info_hash": "47AF858FB510C3842A879AD75875F3E44844B04E"
+        },
+        {
+            "title": "Ray Donovan S07E07 720p WEB h264 TBS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Ray Donovan S07E07 720p WEB h264 TBS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:860E5F6E2F2BD6E54ED4559AC281328ED8982422&dn=Ray+Donovan+S07E07+720p+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:860E5F6E2F2BD6E54ED4559AC281328ED8982422&dn=Ray+Donovan+S07E07+720p+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:860E5F6E2F2BD6E54ED4559AC281328ED8982422&dn=Ray+Donovan+S07E07+720p+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "72daa4d772a31ce25b217d984c0f4417f77d5bef",
+            "guidislink": false,
+            "published": "Sun, 29 Dec 2019 05:10:57 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                29,
+                5,
+                10,
+                57,
+                6,
+                363,
+                0
+            ],
+            "summary": "New episode: Ray Donovan S07E07 720p WEB h264 TBS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Ray Donovan S07E07 720p WEB h264 TBS"
+            },
+            "tv_show_id": "102",
+            "tv_external_id": "152",
+            "tv_show_name": "Ray Donovan",
+            "tv_episode_id": "114093",
+            "tv_raw_title": "Ray Donovan S07E07 720p WEB h264 TBS",
+            "tv_info_hash": "860E5F6E2F2BD6E54ED4559AC281328ED8982422"
+        },
+        {
+            "title": "The Mandalorian S01E08 1080p WEBRiP x264 PETRiFiED",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "The Mandalorian S01E08 1080p WEBRiP x264 PETRiFiED"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:2A38ED59862C414407B7E8101C4CBFE85D66921B&dn=The+Mandalorian+S01E08+1080p+WEBRiP+x264+PETRiFiED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:2A38ED59862C414407B7E8101C4CBFE85D66921B&dn=The+Mandalorian+S01E08+1080p+WEBRiP+x264+PETRiFiED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:2A38ED59862C414407B7E8101C4CBFE85D66921B&dn=The+Mandalorian+S01E08+1080p+WEBRiP+x264+PETRiFiED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "602736cfecd32fa309c66f795b18761b83d7bc45",
+            "guidislink": false,
+            "published": "Fri, 27 Dec 2019 12:30:35 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                27,
+                12,
+                30,
+                35,
+                4,
+                361,
+                0
+            ],
+            "summary": "New episode: The Mandalorian S01E08 1080p WEBRiP x264 PETRiFiED",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: The Mandalorian S01E08 1080p WEBRiP x264 PETRiFiED"
+            },
+            "tv_show_id": "1234",
+            "tv_external_id": "38963",
+            "tv_show_name": "The Mandalorian",
+            "tv_episode_id": "114061",
+            "tv_raw_title": "The Mandalorian S01E08 1080p WEBRiP x264 PETRiFiED",
+            "tv_info_hash": "2A38ED59862C414407B7E8101C4CBFE85D66921B"
+        },
+        {
+            "title": "Mr Robot S04E13 WEB h264 TBS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Mr Robot S04E13 WEB h264 TBS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:E76A9F4EC75B78516BE5932EF6E14824EB728FE9&dn=Mr+Robot+S04E13+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:E76A9F4EC75B78516BE5932EF6E14824EB728FE9&dn=Mr+Robot+S04E13+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:E76A9F4EC75B78516BE5932EF6E14824EB728FE9&dn=Mr+Robot+S04E13+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "b2febef29a1da242cd0d5261a9d7ca60769511eb",
+            "guidislink": false,
+            "published": "Mon, 23 Dec 2019 03:10:20 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                23,
+                3,
+                10,
+                20,
+                0,
+                357,
+                0
+            ],
+            "summary": "New episode: Mr Robot S04E13 WEB h264 TBS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Mr Robot S04E13 WEB h264 TBS"
+            },
+            "tv_show_id": "273",
+            "tv_external_id": "1871",
+            "tv_show_name": "Mr. Robot",
+            "tv_episode_id": "113919",
+            "tv_raw_title": "Mr Robot S04E13 WEB h264 TBS",
+            "tv_info_hash": "E76A9F4EC75B78516BE5932EF6E14824EB728FE9"
+        },
+        {
+            "title": "Mr Robot S04E12 WEB x264 XLF",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Mr Robot S04E12 WEB x264 XLF"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:AF81B794B7AA6E2F748E61402B1F533E22DA52C1&dn=Mr+Robot+S04E12+WEB+x264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:AF81B794B7AA6E2F748E61402B1F533E22DA52C1&dn=Mr+Robot+S04E12+WEB+x264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:AF81B794B7AA6E2F748E61402B1F533E22DA52C1&dn=Mr+Robot+S04E12+WEB+x264+XLF&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "2feaacbc56de17a6018c93d040dc038c63d666c5",
+            "guidislink": false,
+            "published": "Mon, 23 Dec 2019 02:10:20 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                23,
+                2,
+                10,
+                20,
+                0,
+                357,
+                0
+            ],
+            "summary": "New episode: Mr Robot S04E12 WEB x264 XLF",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Mr Robot S04E12 WEB x264 XLF"
+            },
+            "tv_show_id": "273",
+            "tv_external_id": "1871",
+            "tv_show_name": "Mr. Robot",
+            "tv_episode_id": "113915",
+            "tv_raw_title": "Mr Robot S04E12 WEB x264 XLF",
+            "tv_info_hash": "AF81B794B7AA6E2F748E61402B1F533E22DA52C1"
+        },
+        {
+            "title": "Ray Donovan S07E06 720p WEB h264 TBS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Ray Donovan S07E06 720p WEB h264 TBS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:BA0B9C7E93AEB4BE81F243648021F209A89FFC1B&dn=Ray+Donovan+S07E06+720p+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:BA0B9C7E93AEB4BE81F243648021F209A89FFC1B&dn=Ray+Donovan+S07E06+720p+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:BA0B9C7E93AEB4BE81F243648021F209A89FFC1B&dn=Ray+Donovan+S07E06+720p+WEB+h264+TBS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "705b146bf86a94b0154388b42971790361389dc4",
+            "guidislink": false,
+            "published": "Sun, 22 Dec 2019 05:10:59 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                22,
+                5,
+                10,
+                59,
+                6,
+                356,
+                0
+            ],
+            "summary": "New episode: Ray Donovan S07E06 720p WEB h264 TBS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Ray Donovan S07E06 720p WEB h264 TBS"
+            },
+            "tv_show_id": "102",
+            "tv_external_id": "152",
+            "tv_show_name": "Ray Donovan",
+            "tv_episode_id": "113890",
+            "tv_raw_title": "Ray Donovan S07E06 720p WEB h264 TBS",
+            "tv_info_hash": "BA0B9C7E93AEB4BE81F243648021F209A89FFC1B"
+        },
+        {
+            "title": "Vikings S06E04 720p HDTV x264 AVS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Vikings S06E04 720p HDTV x264 AVS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:CE0A0330955DBF1420470C3418AA36E7B512DC49&dn=Vikings+S06E04+720p+HDTV+x264+AVS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:CE0A0330955DBF1420470C3418AA36E7B512DC49&dn=Vikings+S06E04+720p+HDTV+x264+AVS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:CE0A0330955DBF1420470C3418AA36E7B512DC49&dn=Vikings+S06E04+720p+HDTV+x264+AVS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "503e209bcb20cc16dff78c41e4b87ea37332bae6",
+            "guidislink": false,
+            "published": "Thu, 19 Dec 2019 04:10:24 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                19,
+                4,
+                10,
+                24,
+                3,
+                353,
+                0
+            ],
+            "summary": "New episode: Vikings S06E04 720p HDTV x264 AVS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Vikings S06E04 720p HDTV x264 AVS"
+            },
+            "tv_show_id": "272",
+            "tv_external_id": "29",
+            "tv_show_name": "Vikings",
+            "tv_episode_id": "113738",
+            "tv_raw_title": "Vikings S06E04 720p HDTV x264 AVS",
+            "tv_info_hash": "CE0A0330955DBF1420470C3418AA36E7B512DC49"
+        },
+        {
+            "title": "The Mandalorian S01E07 1080p WEBRiP x264 PETRiFiED",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "The Mandalorian S01E07 1080p WEBRiP x264 PETRiFiED"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:DB49F7B88593CF6130A9323F0248801B2D67C952&dn=The+Mandalorian+S01E07+1080p+WEBRiP+x264+PETRiFiED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:DB49F7B88593CF6130A9323F0248801B2D67C952&dn=The+Mandalorian+S01E07+1080p+WEBRiP+x264+PETRiFiED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:DB49F7B88593CF6130A9323F0248801B2D67C952&dn=The+Mandalorian+S01E07+1080p+WEBRiP+x264+PETRiFiED&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "f680b03dd3fa163f5957f8d1ec4c8dc3a9a783d1",
+            "guidislink": false,
+            "published": "Wed, 18 Dec 2019 20:10:24 +0000",
+            "published_parsed": [
+                2019,
+                12,
+                18,
+                20,
+                10,
+                24,
+                2,
+                352,
+                0
+            ],
+            "summary": "New episode: The Mandalorian S01E07 1080p WEBRiP x264 PETRiFiED",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: The Mandalorian S01E07 1080p WEBRiP x264 PETRiFiED"
+            },
+            "tv_show_id": "1234",
+            "tv_external_id": "38963",
+            "tv_show_name": "The Mandalorian",
+            "tv_episode_id": "113714",
+            "tv_raw_title": "The Mandalorian S01E07 1080p WEBRiP x264 PETRiFiED",
+            "tv_info_hash": "DB49F7B88593CF6130A9323F0248801B2D67C952"
+        }
+    ],
+    "bozo": 0,
+    "headers": {
+        "Date": "Thu, 16 Jan 2020 02:13:14 GMT",
+        "Content-Type": "text/xml; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Set-Cookie": "__cfduid=d719888f607760f7675f4cfa6fa4123781579140794; expires=Sat, 15-Feb-20 02:13:14 GMT; path=/; domain=.showrss.info; HttpOnly; SameSite=Lax",
+        "Cache-Control": "max-age=600, public",
+        "CF-Cache-Status": "BYPASS",
+        "Vary": "Accept-Encoding",
+        "Server": "cloudflare",
+        "CF-RAY": "555c91abfff85132-SJC",
+        "Content-Encoding": "gzip"
+    },
+    "href": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+    "status": 200,
+    "encoding": "UTF-8",
+    "version": "rss20",
+    "namespaces": {
+        "tv": "http://showrss.info"
+    }
+}
