@@ -1,0 +1,150 @@
+{
+    "feed": {
+        "title": "showRSS personal feed",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+            "value": "showRSS personal feed"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://showrss.info"
+            }
+        ],
+        "link": "http://showrss.info",
+        "ttl": "30",
+        "subtitle": "showRSS personal feed",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+            "value": "showRSS personal feed"
+        }
+    },
+    "entries": [
+        {
+            "title": "Vikings S06E07 720p WEB H264 GHOSTS",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "Vikings S06E07 720p WEB H264 GHOSTS"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:743E0F4656DFD378420C6C8B9127121B1D656E3A&dn=Vikings+S06E07+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:743E0F4656DFD378420C6C8B9127121B1D656E3A&dn=Vikings+S06E07+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:743E0F4656DFD378420C6C8B9127121B1D656E3A&dn=Vikings+S06E07+720p+WEB+H264+GHOSTS&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "cc4a6cca13da8d2483e88c2e640027857aef64a7",
+            "guidislink": false,
+            "published": "Thu, 16 Jan 2020 02:00:50 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                16,
+                2,
+                0,
+                50,
+                3,
+                16,
+                0
+            ],
+            "summary": "New episode: Vikings S06E07 720p WEB H264 GHOSTS",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: Vikings S06E07 720p WEB H264 GHOSTS"
+            },
+            "tv_show_id": "272",
+            "tv_external_id": "29",
+            "tv_show_name": "Vikings",
+            "tv_episode_id": "115095",
+            "tv_raw_title": "Vikings S06E07 720p WEB H264 GHOSTS",
+            "tv_info_hash": "743E0F4656DFD378420C6C8B9127121B1D656E3A"
+        },
+        {
+            "title": "DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "magnet:?xt=urn:btih:9CD90E920932126815F826A007670365F48F7DCC&dn=DCs+Legends+of+Tomorrow+S05E01+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce"
+                },
+                {
+                    "length": "0",
+                    "type": "application/x-bittorrent",
+                    "href": "magnet:?xt=urn:btih:9CD90E920932126815F826A007670365F48F7DCC&dn=DCs+Legends+of+Tomorrow+S05E01+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+                    "rel": "enclosure"
+                }
+            ],
+            "link": "magnet:?xt=urn:btih:9CD90E920932126815F826A007670365F48F7DCC&dn=DCs+Legends+of+Tomorrow+S05E01+720p+HDTV+x264+SVA&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce",
+            "id": "68312bf69c0c91e6fcfd82ea0c2988a51f18a140",
+            "guidislink": false,
+            "published": "Wed, 15 Jan 2020 03:10:27 +0000",
+            "published_parsed": [
+                2020,
+                1,
+                15,
+                3,
+                10,
+                27,
+                2,
+                15,
+                0
+            ],
+            "summary": "New episode: DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA",
+            "summary_detail": {
+                "type": "text/html",
+                "language": null,
+                "base": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+                "value": "New episode: DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA"
+            },
+            "tv_show_id": "448",
+            "tv_external_id": "1851",
+            "tv_show_name": "DC's Legends of Tomorrow",
+            "tv_episode_id": "115012",
+            "tv_raw_title": "DCs Legends of Tomorrow S05E01 720p HDTV x264 SVA",
+            "tv_info_hash": "9CD90E920932126815F826A007670365F48F7DCC"
+        }
+    ],
+    "bozo": 0,
+    "headers": {
+        "Date": "Thu, 16 Jan 2020 02:13:14 GMT",
+        "Content-Type": "text/xml; charset=UTF-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "close",
+        "Set-Cookie": "__cfduid=d719888f607760f7675f4cfa6fa4123781579140794; expires=Sat, 15-Feb-20 02:13:14 GMT; path=/; domain=.showrss.info; HttpOnly; SameSite=Lax",
+        "Cache-Control": "max-age=600, public",
+        "CF-Cache-Status": "BYPASS",
+        "Vary": "Accept-Encoding",
+        "Server": "cloudflare",
+        "CF-RAY": "555c91abfff85132-SJC",
+        "Content-Encoding": "gzip"
+    },
+    "href": "http://showrss.info/user/UserId.rss?magnets=true&namespaces=true&name=null&quality=null&re=null",
+    "status": 200,
+    "encoding": "UTF-8",
+    "version": "rss20",
+    "namespaces": {
+        "tv": "http://showrss.info"
+    }
+}
