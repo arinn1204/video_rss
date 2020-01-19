@@ -12,9 +12,15 @@ class Rss:
         rss_data = feedparser.parse(self.config.rss_feed_address)
 
         entries = rss_data['entries']
+
+        self.logger.log(rss_data, 'DEBUG')
         for entry in entries:
-            yield {
+            data = {
                 'title': entry['title'],
                 'magnet': entry['link'],
                 'id': entry['id']
             }
+
+            self.logger.log(entry, 'DEBUG')
+
+            yield data

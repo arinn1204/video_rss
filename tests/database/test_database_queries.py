@@ -13,25 +13,25 @@ def test_queries_based_on_torrent_id_entered(mocker):
     logger = mocker.Mock()
     db = database.Database(config, logger)
 
-    called_id = str(uuid.uuid4())
-
+    called_id = {
+        'id': str(uuid.uuid4())
+    }
     (_, mock_cursor, _) = __setup_mocks(mocker)
-    db.get_by_id(called_id)
+    db.determine_new_torrents([called_id])
+    ids = [called_id['id']]
 
-    mock_cursor.execute.assert_called_once_with("""
-        SELECT torrent_id, torrent_name, time_added
-        FROM rss.video_rss
-        WHERE torrent_id = ?;""", called_id)
+    mock_cursor.execute.assert_called_once_with("EXEC rss.usd_new_ids ?;", ids)
 
 
 def test_fetches_all_entries_from_query(mocker):
     config = configuration.Configuration()
     logger = mocker.Mock()
     db = database.Database(config, logger)
-    called_id = str(uuid.uuid4())
-
+    called_id = {
+        'id': str(uuid.uuid4())
+    }
     (_, _, mock_execute) = __setup_mocks(mocker)
-    db.get_by_id(called_id)
+    db.determine_new_torrents([called_id])
     mock_execute.fetchall.assert_called_once_with()
 
 
@@ -39,10 +39,12 @@ def test_returns_available_rows(mocker):
     config = configuration.Configuration()
     logger = mocker.Mock()
     db = database.Database(config, logger)
-    called_id = str(uuid.uuid4())
+    called_id = {
+        'id': str(uuid.uuid4())
+    }
 
     (_, _, mock_execute) = __setup_mocks(mocker)
-    rows = db.get_by_id(called_id)
+    rows = db.determine_new_torrents([called_id])
     assert rows == [(1,)]
 
 

@@ -12,8 +12,10 @@ def test_constructing_proper_connection_string_for_sql_server_with_sspi(mocker):
     config = configuration.Configuration()
     logger = mocker.Mock()
     db = database.Database(config, logger)
-
-    db.get_by_id(str(uuid.uuid4()))
+    ids = [{
+        'id': str(uuid.uuid4())
+    }]
+    db.determine_new_torrents(ids)
     connect_mocker.assert_called_once_with('Driver={ODBC Driver 17 for SQL Server};Data Source=localhost;Initial Catalog=noblepanther_test;Integrated Security=SSPI;')  # noqa: E501
 
 
@@ -27,6 +29,9 @@ def test_constructing_proper_connection_string_for_sql_server_without_sspi(mocke
 
     logger = mocker.Mock()
     db = database.Database(config, logger)
-    db.get_by_id(str(uuid.uuid4()))
+    ids = [{
+        'id': str(uuid.uuid4())
+    }]
+    db.determine_new_torrents(ids)
 
     connect_mocker.assert_called_once_with('Driver={ODBC Driver 17 for SQL Server};Data Source=localhost;Initial Catalog=noblepanther_test;User ID=userID;Password=hunter2;')  # noqa: E501

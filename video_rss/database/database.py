@@ -9,19 +9,14 @@ class Database:
         self.config = config
         self.logger = logger
 
-    def get_by_id(self, torrent_id):
-        query = """
-        SELECT torrent_id, torrent_name, time_added
-        FROM rss.video_rss
-        WHERE torrent_id = ?;"""
-
-        self.logger.log(query, 'DEBUG')
+    def determine_new_torrents(self, torrent_ids):
+        query = "EXEC rss.usd_new_ids ?;"
+        ids = [torrent_id['id'] for torrent_id in torrent_ids]
 
         connection = self.__get_connection()
         cursor = connection.cursor()
-        rows = cursor.execute(query, torrent_id)
+        rows = cursor.execute(query, ids)
         data = rows.fetchall()
-
         cursor.close()
         connection.close()
 
