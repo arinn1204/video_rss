@@ -1,7 +1,5 @@
 #!.env/bin/python
 
-import uuid
-
 from ...video_rss import configuration
 from ...video_rss.database import connection_string_helper
 
