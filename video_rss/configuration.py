@@ -20,17 +20,18 @@ class Configuration:
         self.__default_assignment(
             'database_driver',
             'ODBC Driver 17 for SQL Server')
-        self.__default_assignment(
-            'database_username',
-            None)
-        self.__default_assignment(
-            'database_password',
-            None)
-        self.__default_assignment(
-            'database_instance',
-            None)
         self.__default_assignment('logging_severity', 'DEBUG', True)
         self.logging_masked_values = ['password', 'key']
+
+    def __getattr__(self, attr):
+        if attr not in self.__dict__:
+            if attr in environ:
+                self.__dict__[attr] = environ.get(attr)
+                return self.__dict__.get(attr)
+            else:
+                raise AttributeError(f"{attr} does not exist.")
+
+        return self.__dict__.get(attr)
 
     def __default_assignment(
             self,
