@@ -27,6 +27,13 @@ class Transmission:
             self.session_id = session_id.get_session_id(
                 self.config.transmission_url, self.auth, self.logger)
             self.add_torrent(magnet, retry=False)
+        elif response.status_code == 200:
+            return self.__handle_success(response)
+        else:
+            self.logger.log({
+                'response_body': response.text,
+                'response_headers': response.headers},
+                'CRITICAL')
 
     def __build_headers(self):
         return {
@@ -40,3 +47,14 @@ class Transmission:
                 'filename': magnet
             }
         })
+
+    def __handle_success(self, response):
+        response_obj = json.loads(response.text)
+
+        if response_obj.get('result') == 'success':
+            return response_obj['arguments'].get('torrent-added')
+        else:
+            self.logger.log({
+                'response_body': response.text,
+                'response_headers': response.headers},
+                'ERROR')

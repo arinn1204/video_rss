@@ -5,7 +5,12 @@ def sample_request_session_id():
     class MockRequest:
         def __init__(self):
             self.text = sample_session_id()
-            self.status_code = 200
+
+        def __getattr__(self, attr):
+            if attr not in self.__dict__:
+                self.__dict__[attr] = None
+
+            return self.__dict__[attr]
 
     return MockRequest()
 
