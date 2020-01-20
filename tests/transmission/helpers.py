@@ -5,6 +5,7 @@ def sample_request_session_id():
     class MockRequest:
         def __init__(self):
             self.text = sample_session_id()
+            self.status_code = 200
 
     return MockRequest()
 
