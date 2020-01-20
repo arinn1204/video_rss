@@ -9,9 +9,14 @@ class Database:
         self.config = config
         self.logger = logger
 
-    def determine_new_torrents(self, torrent_ids):
+    def determine_new_torrents(self, torrents):
         query = "EXEC rss.usd_new_ids ?;"
-        ids = [torrent_id['id'] for torrent_id in torrent_ids]
+        self.logger.log(query, 'DEBUG')
+
+        ids = [torrent['id'] for torrent in torrents]
+
+        self.logger.log(torrents, 'DEBUG')
+        self.logger.log(ids, 'DEBUG')
 
         connection = self.__get_connection()
         cursor = connection.cursor()
