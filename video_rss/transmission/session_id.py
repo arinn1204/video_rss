@@ -4,8 +4,8 @@ import requests
 from lxml import html
 
 
-def get_session_id(url, username, password, logger=None):
-    response = requests.get(url, auth=(username, password))
+def get_session_id(url, auth, logger=None):
+    response = requests.get(url, auth=auth)
 
     if logger is not None:
         logger.log(response.text, 'DEBUG')
