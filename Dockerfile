@@ -8,7 +8,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && pip install --user -r /requirements.txt \
     && rm -rf /var/lib/apt/lists/ 
 
-COPY video_rss/*.py /app/
+COPY video_rss/* /app/
 WORKDIR /app
 
 CMD [ "python3", "main.py" ]
