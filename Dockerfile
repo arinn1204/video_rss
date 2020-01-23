@@ -6,9 +6,16 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && apt-get update \
     && ACCEPT_EULA=Y apt-get install -y msodbcsql17 unixodbc-dev \
     && pip install --user -r /requirements.txt \
-    && rm -rf /var/lib/apt/lists/ 
+    && rm -rf /var/lib/apt/lists/
 
-COPY video_rss/* /app/
+COPY video_rss/*.py /app/
+COPY video_rss/database/ /app/database
+COPY video_rss/logging/ /app/logging
+COPY video_rss/rss/ /app/rss
+COPY video_rss/transmission/ /app/transmission
+COPY video_rss/torrents/ /app/torrents
+
 WORKDIR /app
 
-CMD [ "python3", "main.py" ]
+ENTRYPOINT [ "python", "-u", "main.py" ]
+CMD []
