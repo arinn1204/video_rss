@@ -2,17 +2,19 @@
 
 import argparse
 import datetime
-from torrents import transmission
+import torrents
 from time import sleep
+from .configuration import Configuration
 
 
 def main(arguments):
     interval = datetime.timedelta(0, arguments.interval)
     stored_time = datetime.datetime(2000, 1, 1)
+    config = Configuration()
 
     while True:
         if stored_time + interval <= datetime.datetime.now():
-            transmission.add_torrent()
+            torrents.add_torrent(config, arguments.dry_run)
             stored_time = datetime.datetime.now()
         else:
             time_remain = stored_time + interval - datetime.datetime.now()
@@ -30,7 +32,15 @@ if __name__ == '__main__':
         dest='interval',
         action='store',
         help='defines the polling interval in seconds',
-        type=int
-        )
+        type=int)
+
+    parser.add_argument(
+        '-d',
+        '--dry-run',
+        default=False,
+        dest='dry_run',
+        action='store',
+        help='runs application in dry state, not adding to db or starting torrent',  # noqa E501
+        type=bool)
 
     main(parser.parse_args())
