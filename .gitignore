@@ -14,3 +14,5 @@ junit
 .env/*
 .vscode
 *.ps1
+log.txt
+logs/odbctrace.txt
