@@ -8,12 +8,11 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && pip install --user -r /requirements.txt \
     && rm -rf /var/lib/apt/lists/
 
-COPY video_rss/*.py /app/
-COPY video_rss/database/ /app/database
-COPY video_rss/logging/ /app/logging
-COPY video_rss/rss/ /app/rss
-COPY video_rss/transmission/ /app/transmission
-COPY video_rss/torrents/ /app/torrents
+RUN printf "[ODBC]\nTrace = yes\nTraceFile = /tmp/odbctrace.txt\n" >> /etc/odbcinst.ini
+VOLUME /tmp
+
+COPY video_rss/ /app/video_rss
+COPY *.py /app/
 
 WORKDIR /app
 
