@@ -2,9 +2,9 @@
 
 import argparse
 import datetime
-import torrents
 from time import sleep
-from .configuration import Configuration
+from video_rss.configuration import Configuration
+from video_rss import torrents
 
 
 def main(arguments):
@@ -39,8 +39,7 @@ if __name__ == '__main__':
         '--dry-run',
         default=False,
         dest='dry_run',
-        action='store',
-        help='runs application in dry state, not adding to db or starting torrent',  # noqa E501
-        type=bool)
+        action='store_true',
+        help='runs application in dry state and performs no writes')
 
     main(parser.parse_args())
