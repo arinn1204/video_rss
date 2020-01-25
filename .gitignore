@@ -13,3 +13,4 @@ htmlcov
 junit
 .env/*
 .vscode
+*.ps1
