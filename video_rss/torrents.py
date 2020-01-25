@@ -4,11 +4,13 @@ from .database import database
 from .logging import logger
 from .rss import rss
 from .transmission import transmission
+
 from datetime import datetime
 
 
 def add_torrent(config, dry_run=False):
     video_logger = logger.Logger(config)
+    video_logger.log(f"Dry run state: {dry_run}", 'DEBUG')
     rss_feed = rss.Rss(config, video_logger)
 
     torrents = transmission.Transmission(config, video_logger)
