@@ -25,8 +25,8 @@ class Configuration:
 
     def __getattr__(self, attr):
         if attr not in self.__dict__:
-            if attr in environ:
-                self.__dict__[attr] = environ.get(attr)
+            if attr.upper() in environ:
+                self.__dict__[attr] = environ.get(attr.upper())
                 return self.__dict__.get(attr)
             else:
                 raise AttributeError(f"{attr} does not exist.")
@@ -39,8 +39,8 @@ class Configuration:
             default_value,
             to_upper=False):
         value = default_value
-        if property_name in environ:
-            value = environ[property_name]
+        if property_name.upper() in environ:
+            value = environ[property_name.upper()]
 
         if to_upper:
             value = value.upper()

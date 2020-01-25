@@ -9,19 +9,19 @@ from ...video_rss import configuration
 
 class TestSettingDbConfigurationsFromEnvironment:
     def setup_method(self, method):
-        ENV['database_username'] = 'SA'
-        ENV['database_password'] = 'hunter2'
-        ENV['database_data_source'] = 'alliseeisstars.database.windows.net'
-        ENV['database_initial_catalog'] = 'notenoughmemesintests'
-        ENV['database_integrated_security'] = 'NO'
-        ENV['database_instance'] = 'int11kf3'
-        ENV['database_provider'] = 'postgres'
-        ENV['database_driver'] = 'ODBC Driver 14 for SQL Server'
+        ENV['DATABASE_USERNAME'] = 'SA'
+        ENV['DATABASE_PASSWORD'] = 'hunter2'
+        ENV['DATABASE_DATA_SOURCE'] = 'alliseeisstars.database.windows.net'
+        ENV['DATABASE_INITIAL_CATALOG'] = 'notenoughmemesintests'
+        ENV['DATABASE_INTEGRATED_SECURITY'] = 'NO'
+        ENV['DATABASE_INSTANCE'] = 'int11kf3'
+        ENV['DATABASE_PROVIDER'] = 'postgres'
+        ENV['DATABASE_DRIVER'] = 'ODBC Driver 14 for SQL Server'
         self.config = configuration.Configuration()
 
     def teardown_method(self, method):
         for key in ENV.keys():
-            if bool(re.match('^database', key, re.I)):
+            if bool(re.match('^DATABASE', key, re.I)):
                 self.__delete_if_exist(key)
 
     def __delete_if_exist(self, key):
@@ -51,4 +51,10 @@ class TestSettingDbConfigurationsFromEnvironment:
         assert self.config.database_provider == 'postgres'
 
     def test_sets_driver_based_on_environment_variable(self):
+        for key in ENV.keys():
+            if bool(re.match('^DATABASE', key, re.I)):
+                print(key, ENV[key])
+        import json
+
+        print(json.dumps(self.config.__dict__))
         assert self.config.database_driver == 'ODBC Driver 14 for SQL Server'

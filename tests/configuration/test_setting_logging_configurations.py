@@ -20,7 +20,7 @@ class TestSettingLoggingConfigurations:
         assert severity == 'DEBUG'
 
     def test_sets_log_severity_from_environment(self):
-        os.environ['logging_severity'] = 'TRACE'
+        os.environ['LOGGING_SEVERITY'] = 'TRACE'
         config = configuration.Configuration()
 
         severity = config.logging_severity
@@ -28,7 +28,7 @@ class TestSettingLoggingConfigurations:
         assert severity == 'TRACE'
 
     def test_sets_log_severity_from_environment_and_sets_to_upper(self):
-        os.environ['logging_severity'] = 'trace'
+        os.environ['LOGGING_SEVERITY'] = 'trace'
         config = configuration.Configuration()
 
         severity = config.logging_severity
