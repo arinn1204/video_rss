@@ -6,8 +6,8 @@ from os import environ
 class Configuration:
     def __init__(self):
         self.__default_assignment(
-            'database_integrated_security',
-            'SSPI')
+            'database_trusted_connection',
+            'yes')
         self.__default_assignment(
             'database_data_source',
             'localhost')

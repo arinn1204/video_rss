@@ -20,7 +20,7 @@ class TestSettingDefaultConfigurations:
         assert self.config.database_provider == 'mssql'
 
     def test_set_integrated_security_to_sspi_by_default(self):
-        assert self.config.database_integrated_security == 'SSPI'
+        assert self.config.database_trusted_connection == 'yes'
 
     def test_set_data_source_to_localhost_by_default(self):
         assert self.config.database_data_source == 'localhost'
