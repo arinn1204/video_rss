@@ -12,15 +12,33 @@ def test_queries_based_on_torrent_id_entered(mocker):
     config = configuration.Configuration()
     logger = mocker.Mock()
     db = database.Database(config, logger)
+    id = str(uuid.uuid4())
 
     called_id = {
-        'id': str(uuid.uuid4())
+        'id': id
     }
     (_, mock_cursor, _) = __setup_mocks(mocker)
     db.determine_new_torrents([called_id])
-    ids = [called_id['id']]
 
-    mock_cursor.execute.assert_called_once_with("EXEC rss.usd_new_ids ?;", ids)
+    mock_cursor.execute.assert_called_once_with(f"SELECT '{id}' EXCEPT SELECT torrent_id FROM rss.video_rss;")  # noqa: E501
+
+
+def test_query_unions_all_entered_ids_together(mocker):
+    config = configuration.Configuration()
+    logger = mocker.Mock()
+    db = database.Database(config, logger)
+    id1 = str(uuid.uuid4())
+    id2 = str(uuid.uuid4())
+
+    called_id = [{
+        'id': id1
+    }, {
+        'id': id2
+    }]
+    (_, mock_cursor, _) = __setup_mocks(mocker)
+    db.determine_new_torrents(called_id)
+
+    mock_cursor.execute.assert_called_once_with(f"SELECT '{id1}' UNION ALL SELECT '{id2}' EXCEPT SELECT torrent_id FROM rss.video_rss;")  # noqa: E501
 
 
 def test_fetches_all_entries_from_query(mocker):
@@ -45,7 +63,7 @@ def test_returns_available_rows(mocker):
 
     (_, _, mock_execute) = __setup_mocks(mocker)
     rows = db.determine_new_torrents([called_id])
-    assert rows == [(1,)]
+    assert rows == [1]
 
 
 def test_inserts_new_rss_entry(mocker):
@@ -129,6 +147,7 @@ def test_should_rollback_on_failure(mocker):
 
 
 def __setup_mocks(mocker):
+    mocker.patch('sys.platform').return_value = 'Windows'
     mock_pyodbc_connection = mocker.Mock()
     mock_connection = mocker.Mock()
     mock_cursor = mocker.Mock()

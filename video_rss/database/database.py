@@ -10,20 +10,22 @@ class Database:
         self.logger = logger
 
     def determine_new_torrents(self, torrents):
-        query = "EXEC rss.usd_new_ids ?;"
-        self.logger.log(query, 'DEBUG')
-
         ids = [torrent['id'] for torrent in torrents]
+        unions = ''
+        if len(ids) > 1:
+            unions = ''.join([f"UNION ALL SELECT '{id}' " for id in ids[1:]])
+        query = f"SELECT '{ids[0]}' {unions}EXCEPT SELECT torrent_id FROM rss.video_rss;"  # noqa: E501
 
-        self.logger.log(torrents, 'DEBUG')
-        self.logger.log(ids, 'DEBUG')
+        # query = "EXEC rss.usd_new_ids ?;"
+        self.logger.log(query, 'DEBUG')
 
         connection = self.__get_connection()
         cursor = connection.cursor()
-        rows = cursor.execute(query, ids)
-        data = rows.fetchall()
+        rows = cursor.execute(query).fetchall()
         cursor.close()
         connection.close()
+
+        data = [row[0] for row in rows]
 
         self.logger.log(data, 'DEBUG')
 
