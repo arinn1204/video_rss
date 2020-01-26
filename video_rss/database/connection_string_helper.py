@@ -1,5 +1,7 @@
 #!.env/bin/python
 
+import sys
+
 
 def build_connection_string(config):
     connection_string = ''
@@ -18,9 +20,12 @@ def __build_mssql_connection_string(config):
     connection_string += ";"
     connection_string += f"Database={config.database_initial_catalog};"
 
-    if config.database_integrated_security == 'SSPI':
-        connection_string += "Integrated Security="
-        connection_string += f"{config.database_integrated_security};"
+    if config.database_trusted_connection == 'yes':
+        if sys.platform == 'linux':
+            connection_string += f"UID={config.database_username};"
+            connection_string += f"PWD={config.database_password};"
+        else:
+            connection_string += f"Trusted_Connection=yes;"
     else:
         connection_string += f"UID={config.database_username};"
         connection_string += f"PWD={config.database_password};"
