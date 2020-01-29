@@ -20,7 +20,7 @@ def test_queries_based_on_torrent_id_entered(mocker):
     (_, mock_cursor, _) = __setup_mocks(mocker)
     db.determine_new_torrents([called_id])
 
-    mock_cursor.execute.assert_called_once_with(f"SELECT '{id}' EXCEPT SELECT torrent_id FROM rss.video_rss;")  # noqa: E501
+    mock_cursor.execute.assert_called_once_with(f"SELECT new_ids.id FROM rss.video_rss rss RIGHT JOIN (SELECT '{id}' AS 'id' ) new_ids ON rss.torrent_id = new_ids.id WHERE magnet IS NULL;")  # noqa: E501
 
 
 def test_query_unions_all_entered_ids_together(mocker):
@@ -38,7 +38,7 @@ def test_query_unions_all_entered_ids_together(mocker):
     (_, mock_cursor, _) = __setup_mocks(mocker)
     db.determine_new_torrents(called_id)
 
-    mock_cursor.execute.assert_called_once_with(f"SELECT '{id1}' UNION ALL SELECT '{id2}' EXCEPT SELECT torrent_id FROM rss.video_rss;")  # noqa: E501
+    mock_cursor.execute.assert_called_once_with(f"SELECT new_ids.id FROM rss.video_rss rss RIGHT JOIN (SELECT '{id1}' AS 'id' UNION ALL SELECT '{id2}' AS 'id') new_ids ON rss.torrent_id = new_ids.id WHERE magnet IS NULL;")  # noqa: E501
 
 
 def test_fetches_all_entries_from_query(mocker):
@@ -158,6 +158,6 @@ def __setup_mocks(mocker):
     mock_connection.cursor.return_value = mock_cursor
     mock_cursor.execute.return_value = mock_execute
     mock_execute.fetchall.return_value = [(1,)]
-    mock_execute.rowcount.return_value = 1
+    mock_execute.rowcount = 1
 
     return (mock_connection, mock_cursor, mock_execute)

@@ -13,8 +13,10 @@ class Database:
         ids = [torrent['id'] for torrent in torrents]
         unions = ''
         if len(ids) > 1:
-            unions = ''.join([f"UNION ALL SELECT '{id}' " for id in ids[1:]])
-        query = f"SELECT '{ids[0]}' {unions}EXCEPT SELECT torrent_id FROM rss.video_rss;"  # noqa: E501
+            unions = ' '.join([f"UNION ALL SELECT '{id}' AS 'id'" for id in ids[1:]])  # noqa: E501
+        sub_query = f"SELECT '{ids[0]}' AS 'id' {unions}"
+
+        query = f"SELECT new_ids.id FROM rss.video_rss rss RIGHT JOIN ({sub_query}) new_ids ON rss.torrent_id = new_ids.id WHERE magnet IS NULL;"  # noqa: E501
 
         # query = "EXEC rss.usd_new_ids ?;"
         self.logger.log(query, 'DEBUG')
@@ -49,7 +51,7 @@ class Database:
                 torrent_file,
                 added_time,
                 magnet_link)
-            entries_effected = rows.rowcount()
+            entries_effected = rows.rowcount
         except pyodbc.DatabaseError as e:
             connection.rollback()
             self.logger.log(e, 'ERROR')
