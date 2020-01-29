@@ -43,8 +43,9 @@ class Logger:
             'CRITICAL': 2,
             'ERROR': 3,
             'WARNING': 4,
-            'DEBUG': 5,
-            'TRACE': 6,
+            'INFO': 5,
+            'DEBUG': 6,
+            'TRACE': 7,
             'ALL': 99
         }
 

@@ -29,7 +29,7 @@ class Database:
 
         data = [row[0] for row in rows]
 
-        self.logger.log(data, 'DEBUG')
+        self.logger.log(data, 'INFO')
 
         return data
 
@@ -61,7 +61,7 @@ class Database:
             cursor.close()
             connection.close()
 
-        self.logger.log(f"Rows effected: {entries_effected}", 'DEBUG')
+        self.logger.log(f"Rows effected: {entries_effected}", 'INFO')
         return entries_effected
 
     def __get_connection(self):

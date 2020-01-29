@@ -52,7 +52,10 @@ class Transmission:
         response_obj = json.loads(response.text)
 
         if response_obj.get('result') == 'success':
-            return response_obj['arguments'].get('torrent-added')
+            new_item = response_obj['arguments'].get('torrent-added')
+            self.logger.log(new_item, 'INFO')
+
+            return new_item
         else:
             self.logger.log({
                 'response_body': response.text,
