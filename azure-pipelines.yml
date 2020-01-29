@@ -51,7 +51,7 @@ stages:
     - task: Docker@2
       inputs:
         command: buildAndPush
-        repository: trixter1394/VideoRSS
+        repository: trixter1394/video_rss
         tags: latest
         dockerfile: ./Dockerfile
     - task: Docker@2
