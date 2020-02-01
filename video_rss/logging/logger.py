@@ -1,6 +1,7 @@
 #!.env/bin/python
 
 import json
+import datetime
 
 
 class Logger:
@@ -17,8 +18,10 @@ class Logger:
 
     def __build_log(self, log, config):
         new_log = {
-            'message': log
+            'message': log,
+            'current_time': str(datetime.datetime.now())
         }
+
         for key, value in config.__dict__.items():
             section, config_name = key.split('_', 1)
 

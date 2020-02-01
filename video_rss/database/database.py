@@ -29,7 +29,8 @@ class Database:
 
         data = [row[0] for row in rows]
 
-        self.logger.log(data, 'INFO')
+        if len(data) > 0:
+            self.logger.log(f"new ids: {data}", 'INFO')
 
         return data
 
