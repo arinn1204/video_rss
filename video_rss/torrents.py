@@ -30,4 +30,7 @@ def add_torrent(config, dry_run=False):
                 datetime.now(),
                 new_file['magnet'])
 
+    if len(new_entries) > 0:
+        video_logger.log(f"New Entries: {new_entries}", 'INFO')
+
     return new_entries
