@@ -4,7 +4,7 @@ import uuid
 
 from ...video_rss.database import database
 from ...video_rss import configuration
-import video_rss.tests.database.database_helpers as database_helpers
+from . import database_helpers
 
 
 def test_queries_based_on_torrent_id_entered(mocker):
