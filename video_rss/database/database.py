@@ -10,6 +10,9 @@ class Database:
         self.logger = logger
 
     def determine_new_torrents(self, torrents):
+        if len(torrents) == 0:
+            return []
+
         ids = [torrent['id'] for torrent in torrents]
         unions = ''
         if len(ids) > 1:

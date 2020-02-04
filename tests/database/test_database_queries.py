@@ -146,6 +146,15 @@ def test_should_rollback_on_failure(mocker):
     connection.commit.assert_not_called()
 
 
+def test_should_return_empty_array_if_no_ids_entered(mocker):
+    config = configuration.Configuration()
+    logger = mocker.Mock()
+    db = database.Database(config, logger)
+    result = db.determine_new_torrents([])
+
+    assert result == []
+
+
 def __setup_mocks(mocker):
     mocker.patch('sys.platform').return_value = 'Windows'
     mock_pyodbc_connection = mocker.Mock()
