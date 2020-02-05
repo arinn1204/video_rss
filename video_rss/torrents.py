@@ -6,6 +6,7 @@ from .rss import rss
 from .transmission import transmission
 
 from datetime import datetime
+import traceback
 
 
 def add_torrent(config, dry_run=False):
@@ -36,4 +37,7 @@ def add_torrent(config, dry_run=False):
 
         return new_entries
     except Exception as e:
-        video_logger.log(e, 'ERROR')
+        formatted_lines = traceback.format_exc().splitlines()
+        video_logger.log(
+            f"args: {e.args}, stacktrace: {formatted_lines}",
+            'ERROR')
