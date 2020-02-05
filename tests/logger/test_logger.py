@@ -98,13 +98,13 @@ def test_should_mask_api_key(mocker):
                 'key': '********'
             },
             'current_time': stubbed_time,
-            'level': 'TRACE'
+            'level': 'DEBUG'
         }
 
         json_mock = mocker.patch('json.dumps')
         logger = logger_module.Logger(config)
 
-        logger.log(log_object)
+        logger.log(log_object, 'DEBUG')
 
         json_mock.assert_called_once_with(expected_result)
 
