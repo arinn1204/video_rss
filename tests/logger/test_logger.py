@@ -31,7 +31,8 @@ def test_should_pass_log_object_to_json_converter(mocker):
                 'severity': 'TRACE',
                 'masked_values': ['password', 'key']
             },
-            'current_time': stubbed_time
+            'current_time': stubbed_time,
+            'level': 'TRACE'
         }
 
         json_mock = mocker.patch('json.dumps')
@@ -63,7 +64,8 @@ def test_should_mask_database_password(mocker):
             'database': {
                 'password': '********'
             },
-            'current_time': stubbed_time
+            'current_time': stubbed_time,
+            'level': 'TRACE'
         }
 
         json_mock = mocker.patch('json.dumps')
@@ -95,7 +97,8 @@ def test_should_mask_api_key(mocker):
             'someapi': {
                 'key': '********'
             },
-            'current_time': stubbed_time
+            'current_time': stubbed_time,
+            'level': 'TRACE'
         }
 
         json_mock = mocker.patch('json.dumps')

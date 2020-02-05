@@ -7,18 +7,19 @@ import datetime
 class Logger:
     def __init__(self, config):
         self.log_level = self.__log_value(config.logging_severity)
-        self.build_log = lambda message: self.__build_log(message, config)
+        self.build_log = lambda message, severity: self.__build_log(message, config, severity)  # noqa: E501
         self.masked_values = config.logging_masked_values
 
     def log(self, message, severity='TRACE'):
         if self.log_level >= self.__log_value(severity):
-            log = self.build_log(message)
+            log = self.build_log(message, severity)
             formatted_log = json.dumps(log)
             print(formatted_log)
 
-    def __build_log(self, log, config):
+    def __build_log(self, log, config, severity):
         new_log = {
             'message': log,
+            'level': severity,
             'current_time': str(datetime.datetime.now())
         }
 
