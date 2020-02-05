@@ -60,7 +60,6 @@ class Transmission:
 
         if response_obj.get('result') == 'success':
             new_item = response_obj['arguments'].get('torrent-added')
-            self.logger.log(new_item, 'INFO')
 
             return new_item
         else:

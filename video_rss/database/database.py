@@ -32,9 +32,6 @@ class Database:
 
         data = [row[0] for row in rows]
 
-        if len(data) > 0:
-            self.logger.log(f"new ids: {data}", 'INFO')
-
         return data
 
     def insert(self, torrent_id, torrent_file, added_time, magnet_link):
@@ -65,7 +62,6 @@ class Database:
             cursor.close()
             connection.close()
 
-        self.logger.log(f"Rows effected: {entries_effected}", 'INFO')
         return entries_effected
 
     def __get_connection(self):
